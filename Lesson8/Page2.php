@@ -1,0 +1,105 @@
+<?php
+$listings = [
+  [
+    'id' => 1,
+    'title' => 'Software Engineer',
+    'description' => 'We are seeking a skilled software engineer to develop high-quality software solutions.',
+    'salary' => 80000,
+    'location' => 'San Francisco',
+    'tags' => ['Software Development', 'Java', 'Python']
+  ],
+  [
+    'id' => 2,
+    'title' => 'Marketing Specialist',
+    'description' => 'We are looking for a marketing specialist to develop and implement effective marketing strategies.',
+    'salary' => 60000,
+    'location' => 'New York',
+    'tags' => ['Digital Marketing', 'Social Media', 'SEO']
+  ],
+  [
+    'id' => 3,
+    'title' => 'Accountant',
+    'description' => 'We are hiring an experienced accountant to handle financial transactions and ensure compliance.',
+    'salary' => 55000,
+    'location' => 'Chicago',
+    'tags' => ['Accounting', 'Bookkeeping', 'Financial Reporting']
+  ],
+  [
+    'id' => 4,
+    'title' => 'UX Designer',
+    'description' => 'We are seeking a talented UX designer to improve user experiences across our platforms.',
+    'salary' => 70000,
+    'location' => 'Los Angeles',
+    'tags' => ['UX', 'UI', 'Design']
+  ]
+];
+
+$keyword = isset($_GET['keyword']) ? strtolower(trim($_GET['keyword'])) : '';
+
+$matchedListings = [];
+
+if ($keyword !== '') {
+    foreach ($listings as $listing) {
+        $combined = strtolower(
+            $listing['title'] . ' ' .
+            $listing['description'] . ' ' .
+            $listing['location'] . ' ' .
+            implode(' ', $listing['tags'])
+        );
+
+        if (strpos($combined, $keyword) !== false) {
+            $matchedListings[] = $listing;
+        }
+    }
+}
+
+if ($keyword === '') {
+    $heading = "All Job Listings";
+    $matchedListings = $listings;
+} elseif (count($matchedListings) > 0) {
+    $heading = "Search Results for '" . htmlspecialchars($keyword) . "'";
+} else {
+    $heading = "No matches found for '" . htmlspecialchars($keyword) . "'. Showing all listings:";
+    $matchedListings = $listings;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Job Listings</title>
+</head>
+
+<body class="bg-gray-100">
+  <header class="bg-blue-500 text-white p-4">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-semibold">Job Listings</h1>
+    </div>
+  </header>
+
+  <div class="container mx-auto p-4 mt-4">
+    <h2 class="text-2xl font-semibold mb-4"><?= $heading ?></h2>
+
+    <?php foreach ($matchedListings as $listing): ?>
+      <div class="md my-4">
+        <div class="bg-white rounded-lg shadow-md">
+          <div class="p-4">
+            <h2 class="text-xl font-semibold"><?= htmlspecialchars($listing['title']) ?></h2>
+            <p class="text-gray-700 text-lg mt-2"><?= htmlspecialchars($listing['description']) ?></p>
+            <ul class="mt-4">
+              <li class="mb-2"><strong>Salary:</strong> $<?= number_format($listing['salary']) ?></li>
+              <li class="mb-2"><strong>Location:</strong> <?= htmlspecialchars($listing['location']) ?></li>
+              <li class="mb-2"><strong>Tags:</strong> <?= htmlspecialchars(implode(', ', $listing['tags'])) ?></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <?php endforeach; ?>
+  </div>
+</body>
+
+</html>
