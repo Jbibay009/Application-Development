@@ -1,0 +1,315 @@
+<html>
+<head>
+<title>3BSCS-1 Activity 3</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a  class="navbar-brand" href="#">E-Commerce</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.php">Home</a></li>
+
+                <li><a href="#" data-toggle="modal" data-target="#myModal">Contact Us</a></li>
+
+                    <div class="modal fade" id="myModal">
+                    <div class ="modal-dialog">
+
+                        <div class ="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">&times</button>
+                            <h4>JB Shawarma</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Jonathan D. Bibay</p>
+                            <p>3BSCS-1</p>
+                            <p>Contact no. 09365183346</p>
+                            <p>Email: jonathan.bibay@outlook.com</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-info" data-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+
+                    </div>
+                    </div>
+
+                <li><a href="#">Software</a></li>
+                <li><a href="#">Music</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- Aside -->
+<aside class="col-md-4">
+
+<!-- Shawarma -->
+<div class="col-md-10 col-md-offset-1">
+    <div class="list-group">
+        <a href="Shawarma.php" class="list-group-item" style="padding: 0; margin: 0;">
+
+            <div class="col-md-3" style="padding:0; margin:0;">
+                <img src="pics/food1.jpg" style="width: 80px; height:100px;">
+            </div>
+
+            <div class="col-md-9">
+                <div class="list-group-item-heading">
+                    <h4>Php: 75.00</h4>
+                    <h4>Shawarma</h4>
+                    <div class="clearfix"></div>
+                </div>
+                <p class="list-group-item">Shawarma with Pita</p>
+            </div>
+                <div class="clearfix"></div>
+        </a>
+    </div>
+</div>
+
+<!-- Shawarma Rice -->
+<div class="col-md-10 col-md-offset-1">
+    <div class="list-group">
+        <a href="Shawarma Rice.php" class="list-group-item" style="padding: 0; margin: 0;">
+
+            <div class="col-md-3" style="padding:0; margin:0;">
+                <img src="pics/food2.jpg" style="width: 80px; height:100px;">
+            </div>
+
+            <div class="col-md-9">
+                <div class="list-group-item-heading">
+                    <h4>Php: 100.00</h4>
+                    <h4>Shawarma Rice</h4>
+                    <div class="clearfix"></div>
+                </div>
+                <p class="list-group-item">Shawarma with Java rice</p>
+            </div>
+                <div class="clearfix"></div>
+        </a>
+    </div>
+</div>
+
+<!-- Kebab -->
+<div class="col-md-10 col-md-offset-1">
+    <div class="list-group">
+        <a href="Kebab.php" class="list-group-item" style="padding: 0; margin: 0;">
+
+            <div class="col-md-3" style="padding:0; margin:0;">
+                <img src="pics/food3.jpg" style="width: 80px; height:100px;">
+            </div>
+
+            <div class="col-md-9">
+                <div class="list-group-item-heading">
+                    <h4>Php: 80.00</h4>
+                    <h4>Kebab</h4>
+                    <div class="clearfix"></div>
+                </div>
+                <p class="list-group-item">Kebab with Pita</p>
+            </div>
+                <div class="clearfix"></div>
+        </a>
+    </div>
+</div>
+
+<!-- Kebab Rice -->
+<div class="col-md-10 col-md-offset-1">
+    <div class="list-group">
+        <a href="Kebab Rice.php" class="list-group-item" style="padding: 0; margin: 0;">
+
+            <div class="col-md-3" style="padding:0; margin:0;">
+                <img src="pics/food4.jpg" style="width: 80px; height:100px;">
+            </div>
+
+            <div class="col-md-9">
+                <div class="list-group-item-heading">
+                    <h4>Php: 120.00</h4>
+                    <h4>Kebab Rice</h4>
+                    <div class="clearfix"></div>
+                </div>
+                <p class="list-group-item">Kebab with Java rice</p>
+            </div>
+                <div class="clearfix"></div>
+        </a>
+    </div>
+</div>
+
+<!-- Nachos Shawarma -->
+<div class="col-md-10 col-md-offset-1">
+    <div class="list-group">
+        <a href="Nachos Shawarma.php" class="list-group-item" style="padding: 0; margin: 0;">
+
+            <div class="col-md-3" style="padding:0; margin:0;">
+                <img src="pics/food5.jpg" style="width: 80px; height:100px;">
+            </div>
+
+            <div class="col-md-9">
+                <div class="list-group-item-heading">
+                    <h4>Php: 85.00</h4>
+                    <h4>Nachos Shawarma</h4>
+                    <div class="clearfix"></div>
+                </div>
+                <p class="list-group-item">Nachos with Shawarma</p>
+            </div>
+                <div class="clearfix"></div>
+        </a>
+    </div>
+</div>
+
+</aside>
+
+<!-- Product Order -->
+<header class="col-md-8">
+
+<div class="col-md-12">
+    <div class="thumbnail">
+        <img src="pics/food5.jpg" style="width: 100%">
+        <div class="caption">
+            <h4 class="pull-right">Php: 85.00</h4>
+            <h4><a href="product.php">Nachos Shawarma</a></h4>
+            <div><button class="btn btn-primary" data-target="#buy_me" data-toggle="modal" style="margin-left: 10px; margin-bottom: 10px;">Buy this product</button></div>
+
+            <div class="modal fade" id="buy_me">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">&times</button>
+                            <h2 class="modal-title">Buy food</h2>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control input-lg" placeholder="Enter your name: ">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control input-lg" placeholder="Enter your Email: ">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control input-lg" placeholder="Enter your Contact Number: ">
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" style="font-size: 20px; color:gray;">Address..</textarea>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-danger" data-dismiss="modal">Submit order</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+             <p>A fusion dish that combines the traditional Middle Eastern shawarma 
+                with the classic Mexican nachos. This typically involves a base of tortilla chips, 
+                topped with shawarma meat (usually chicken or lamb), cheese, and various toppings 
+                ike chopped vegetables, tahini sauce, and hot sauce. It's a popular dish that offers 
+                a fun and flavorful combination of two cuisines. </p>
+        </div>
+    </div>
+
+</div>
+</header>
+
+<!-- Comments -->
+<div class="col-md-8 col-md-offset-4">
+
+    <div class="col-md-12">
+
+        <div class="well">
+            <div class="text-right">
+                <button class="btn btn-danger">Leave Comments</button>
+            </div>
+        </div>
+
+        <div class="well">
+            <span class="lead">Mr. Coder</span>
+            <span class="pull-right">1 day ago</span></hr>
+            <p>I really love the taste of this food.. Will recommend</p>
+        </div>
+
+        <div class="well">
+            <span class="lead">Mrs. Fiona</span>
+            <span class="pull-right">3 days ago</span></hr>
+            <p>Délicieuse</p>
+        </div>
+
+        <div class="well">
+            <span class="lead">Osama Habibi</span>
+            <span class="pull-right">5 days ago</span></hr>
+            <p>لذيذ</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Thumbnails -->
+<div class="container">
+<div class="page-header"><h3 class="text-center">Related Products </h3></div>
+
+<div class="col-md-3">
+    <div class="thumbnail">
+        <img src="pics/food2.jpg" style="width: 100%">
+        <div class="caption">
+        <h5 class="pull-right">Php: 100.00</h5>
+        <h4><a href="Shawarma Rice.php">Shawarma with Rice</a></h4>
+        <p>Shawarma with Java Rice</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="thumbnail">
+        <img src="pics/food3.jpg" style="width: 100%">
+        <div class="caption">
+        <h5 class="pull-right">Php: 80.00</h5>
+        <h4><a href="Kebab.php">Kebab</a></h4>
+        <p>Kebab with Pita</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="thumbnail">
+        <img src="pics/food4.jpg" style="width: 100%">
+        <div class="caption">
+        <h5 class="pull-right">Php: 120.00</h5>
+        <h4><a href="Kebab Rice.php">Kebab with Rice</a></h4>
+        <p>kebab with Java Rice</p>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-3">
+    <div class="thumbnail">
+        <img src="pics/food1.jpg" style="width: 100%">
+        <div class="caption">
+        <h5 class="pull-right">Php: 75.00</h5>
+        <h4><a href="Shawarma Rice.php">Shawarma</a></h4>
+        <p>Shawarma with Pita</p>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
